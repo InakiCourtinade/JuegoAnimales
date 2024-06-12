@@ -1,5 +1,5 @@
 //imagenes de los animales
-let animales = ["hornero.jpg", "Carpincho.jpg", "yaguarete.jpg", "yarara.jpg", "aguara.jpg","tapir.jpg", "vicuña.jpg","pinguino.jpg","mono.jpg"];
+let animales = ["hornero.jpg", "Carpincho.jpg", "yaguarete.jpg", "yarara.jpg", "Aguara.jpg","tapir.jpg", "vicuña.jpg","pinguino.jpg","mono.jpg"];
 
 let correcta = [2,1,1,2,0,1,0,1,0];
 
