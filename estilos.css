@@ -183,7 +183,7 @@ header {
 }
 @media(max-width:420px){
     h1{
-        margin: 40px;
+        /* margin: 40px; */
         font-size: 20px;
     }
     .opcion{
