@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+h1{
+    width: fit-content;
+    background-color: #fff;
+    margin: 40px auto;
+    font-family: 'Mochiy Pop One';
+    display: flex;
+    justify-content: center;
+    /* border-radius: 60px;
+    box-shadow: 5px 5px 0 #000; */
+    /* padding: 20px 30px; */
+}
+h2{
+    font-family: 'Mochiy Pop One';
+}
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    /* padding: 20px 0; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+footer .ftext{
+    font-size: 20px;
+    
+}
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+/* PANTALLA INICIO */
+#pantalla-inicial{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border: none;
+    background: #580078;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Mochiy Pop One';
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.msj{
+    max-width: 300px;
+    align-self: center;
+    font-size: 30px;
+}
+
+
+
+
+/* PANTALLA juego */
+#pantalla-juego{
+    display: none;
+}
+.pantalla-juego{
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.pantalla-juego img{
+    max-width: 300px;
+    max-height: 200px;
+    border: 5px solid;
+    width: 100%;
+}
+.opciones{
+    max-width: 400px;
+    margin: auto;
+    font-family: 'Mochiy Pop One';
+}
+.opcion{
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 400px;
+    margin: 30px auto;
+    cursor: pointer;
+    font-family: 'Mochiy Pop One';
+}
+.opcion .letra{
+    background-color: #580078;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 35px;
+    border: 5px solid #fff;
+    position: relative;
+}
+.opcion .nombre{
+    background: #fff;
+    width: 100%;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 30px;
+    z-index: -2;
+    border-radius: 0 20px 20px 0;
+    padding: 7px 0 7px 30px;
+}
+/* clases que se aplicará cuando haya acertada la opcion  */
+.opcion .nombreAcertada{
+    background-color: yellowgreen;
+    color: #fff;
+}
+.opcion .letraAcertada{
+    background-color: yellowgreen;
+    color: #fff ;
+}
+/* clases que se aplicaran cuando se equivoque en la opcion elegida */
+.opcion .nombreNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+.opcion .letraNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+
+
+
+
+
+/* PANTALLA final */
+#pantalla-final{
+    display: none;
+    text-align: center;
+}
+#pantalla-final #numCorrectas{
+    background-color: chartreuse;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+#pantalla-final #numIncorrectas{
+    background-color: darkred;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+@media(max-width:380px){
+    h1{
+        margin: 40px;
+        font-size: 20px;
+    }
+    .opcion{
+        max-width: 200px;
+    }
+    #pantalla-final{
+        margin-bottom: 200px;
+        font-size: 10px;
+    }
+    #pantalla-inicial{
+        max-width: 200px;
+        
+    }
+    .opcion .nombre{
+        font-size: 15px;
+    }
+    .opcion .letra{
+        font-size: 15px;
+    }
+    .pantalla-juego img{
+        max-width: 200px;
+        max-height: 150px;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .ftext{
+        max-width: 280px;
+        
+    }
+    header{
+        font-size: 20px;
+    }
+    #pantalla-final #numCorrectas{
+        width: 34px;
+        height: 33px;
+    }
+    #pantalla-final #numIncorrectas{
+        width: 34px;
+        height: 33px;
+    }
+
+}
