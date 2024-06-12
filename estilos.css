@@ -181,7 +181,7 @@ header {
     border-radius: 50%;
     border: 5px solid #fff;
 }
-@media(max-width:380px){
+@media(max-width:420px){
     h1{
         margin: 40px;
         font-size: 20px;
