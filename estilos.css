@@ -16,9 +16,6 @@ h1{
     font-family: 'Mochiy Pop One';
     display: flex;
     justify-content: center;
-    /* border-radius: 60px;
-    box-shadow: 5px 5px 0 #000; */
-    /* padding: 20px 30px; */
 }
 h2{
     font-family: 'Mochiy Pop One';
@@ -40,7 +37,7 @@ footer .ftext{
 header {
     background-color:rgb(31 41 55 / 1);
     color: #fff;
-    padding: 30px 0;
+    padding: 10px 0;
     
    
 }
@@ -180,6 +177,7 @@ header p{
 #pantalla-final{
     display: none;
     text-align: center;
+    margin-bottom: 200px;
 }
 #pantalla-final #numCorrectas{
     background-color: chartreuse;
