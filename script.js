@@ -55,6 +55,7 @@ function limpiarOpciones(){
     document.getElementById("l0").className = "letra";
     document.getElementById("l1").className = "letra";
     document.getElementById("l2").className = "letra";
+
 }
 
 function comprobarRespuesta(opElegida){
@@ -73,6 +74,7 @@ function comprobarRespuesta(opElegida){
         document.getElementById("l" + correcta[posicion]).className = "letra letraAcertada";
     }
     posicion++;
+    document.getElementById("contador").innerHTML = cantidadAcertadas.toString() + "/9"
     setTimeout(suboAnimales,1000);
 }
 function terminarJuego(){
