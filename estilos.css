@@ -9,13 +9,27 @@ body{
     background-attachment: fixed;
     margin: 0;
 }
-h1{
-    
+.contadores{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.link{
+    display: flex;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.link:hover{
+    color: #22C55E;
+}
+.h1{  
     background-color: #fff;
-    margin: 40px auto;
+    margin: 30px auto;
     font-family: 'Mochiy Pop One';
     display: flex;
     justify-content: center;
+    font-size: 30px;
 }
 h2{
     font-family: 'Mochiy Pop One';
@@ -71,8 +85,8 @@ header p{
 }
 
 .test{
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
 }
 .btn{
     border: none;
@@ -83,6 +97,7 @@ header p{
     cursor: pointer;
     transition: .5s;
     font-family: 'Mochiy Pop One';
+    margin-top: 20px;
     
 }
 .btn:hover{
@@ -92,6 +107,10 @@ header p{
     max-width: 300px;
     align-self: center;
     font-size: 30px;
+}
+.imagenJuego{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -103,8 +122,8 @@ header p{
 }
 .pantalla-juego{
     max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
+    margin: 30px auto;
+    text-align: center !important;
     margin-bottom: 200px;
 }
 .pantalla-juego img{
@@ -168,6 +187,9 @@ header p{
     background-color: darkred;
     color: #fff;
 }
+footer p{
+    margin-bottom: 10px;
+}
 
 
 
@@ -196,7 +218,7 @@ header p{
     border: 5px solid #fff;
 }
 @media(max-width:490px){
-    h1{
+    .h1{
         /* margin: 40px; */
         font-size: 20px;
     }
@@ -227,10 +249,14 @@ header p{
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 10px;
     }
     footer .ftext{
         max-width: 280px;
         
+    }
+    footer p{
+        margin-bottom: 10px;
     }
     header p{
         font-size: 20px;
@@ -243,5 +269,21 @@ header p{
         width: 34px;
         height: 33px;
     }
-
+    .btn{
+        border: none;
+        background: #580078;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .5s;
+        font-family: 'Mochiy Pop One';
+        font-size: 10px;
+    }
+    .test p{
+        font-size: 13px;
+    }
+    .link{
+        font-size: 10px;
+    }
 }
